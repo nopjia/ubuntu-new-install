@@ -2,6 +2,7 @@
 
 set -e
 
+
 # setup directories
 
 mkdir -p ~/code
@@ -11,6 +12,7 @@ mkdir -p ~/nop/work
 mkdir -p ~/nop/screenshots
 cp ./images/cat_by_niqole-lee_square.jpg ~/nop/personal
 cp ./images/purple_wallpaper.jpg ~/nop/personal
+
 
 # write bash aliases
 
@@ -49,6 +51,9 @@ sudo snap install slack --classic
 # https://github.com/creationix/nvm
 
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 nvm install --lts
 
 
