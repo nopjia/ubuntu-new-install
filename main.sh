@@ -1,3 +1,13 @@
+# setup directories
+
+mkdir ~/code
+mkdir ~/nop
+mkdir ~/nop/personal
+mkdir ~/nop/work
+mkdir ~/nop/screenshots
+mv ./images/cat_by_niqole-lee_square.jpg ~/nop/personal
+mv ./images/purple_wallpaper.jpg ~/nop/personal
+
 # write bash aliases
 
 cat >> ~/.bash_aliases <<EOF
@@ -13,12 +23,12 @@ EOF
 
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-sudo apt-get update
-sudo apt-get install google-chrome-stable
+sudo apt update
+sudo apt install -y google-chrome-stable
 
 
 # uninstall firefox
-sudo apt remove firefox
+sudo apt remove -y firefox
 
 
 # install software
@@ -42,10 +52,10 @@ nvm install --lts
 # https://github.com/phw/peek
 sudo add-apt-repository ppa:peek-developers/stable
 sudo apt update
-sudo apt install peek
+sudo apt install -y peek
 
 
 # gnome tweak tools and extensions
-sudo apt install gnome-tweak-tool
-sudo apt install gnome-shell-extensions
-sudo apt install chrome-gnome-shell
+sudo apt install -y gnome-tweak-tool
+sudo apt install -y gnome-shell-extensions
+sudo apt install -y chrome-gnome-shell
