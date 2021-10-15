@@ -1,12 +1,16 @@
+#!/bin/bash
+
+set -e
+
 # setup directories
 
-mkdir ~/code
-mkdir ~/nop
-mkdir ~/nop/personal
-mkdir ~/nop/work
-mkdir ~/nop/screenshots
-mv ./images/cat_by_niqole-lee_square.jpg ~/nop/personal
-mv ./images/purple_wallpaper.jpg ~/nop/personal
+mkdir -p ~/code
+mkdir -p ~/nop
+mkdir -p ~/nop/personal
+mkdir -p ~/nop/work
+mkdir -p ~/nop/screenshots
+cp ./images/cat_by_niqole-lee_square.jpg ~/nop/personal
+cp ./images/purple_wallpaper.jpg ~/nop/personal
 
 # write bash aliases
 
@@ -50,7 +54,7 @@ nvm install --lts
 
 # install peek
 # https://github.com/phw/peek
-sudo add-apt-repository ppa:peek-developers/stable
+sudo add-apt-repository -y ppa:peek-developers/stable
 sudo apt update
 sudo apt install -y peek
 
