@@ -47,6 +47,13 @@ sudo snap install emote
 sudo snap install slack --classic
 
 
+# install peek
+# https://github.com/phw/peek
+sudo add-apt-repository -y ppa:peek-developers/stable
+sudo apt update
+sudo apt install -y peek
+
+
 # install nvm
 # https://github.com/creationix/nvm
 
@@ -56,12 +63,19 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 nvm install --lts
 
+# install git
 
-# install peek
-# https://github.com/phw/peek
-sudo add-apt-repository -y ppa:peek-developers/stable
-sudo apt update
-sudo apt install -y peek
+sudo apt install -y git
+cat >> ~/.gitconfig <<EOF
+[alias]
+  cam = commit -am
+  st = status
+  df = diff
+  co = checkout
+  br = branch
+  bra = branch -a
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+EOF
 
 
 # gnome tweak tools and extensions
