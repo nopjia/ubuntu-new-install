@@ -8,6 +8,7 @@ Ubuntu 20.04.3 LTS
 - Displays > Night Light > ON
 - Mouse & Touchpad > Touchpad > Natural Scrolling > OFF
 - Power > When the Power Button is pressed
+- Keyboard Shortcuts > Home folder > "Super+E"
 - Nautilus > Hamburger Menu > Show Hidden Files
 - Additional Drivers > Install proprietary drivers
 
