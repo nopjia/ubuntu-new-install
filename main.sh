@@ -3,6 +3,7 @@
 set -e
 
 # setup directories
+mkdir -p ~/bin
 mkdir -p ~/code
 mkdir -p ~/nop
 mkdir -p ~/nop/personal
@@ -21,7 +22,7 @@ EOF
 
 # install dependencies
 sudo apt update
-sudo apt upgrade -y
+sudo apt upgrade -y --allow-downgrades
 sudo apt install -y curl
 
 # install google chrome
@@ -81,3 +82,6 @@ sudo ln -s /usr/bin/python3 /usr/bin/python
 sudo apt install -y gnome-tweak-tool
 sudo apt install -y gnome-shell-extensions
 sudo apt install -y chrome-gnome-shell
+
+# cleanup
+sudo apt autoremove
