@@ -29,6 +29,7 @@ Settings
 
 - General > Suspend when laptop lid is closed > OFF
 - Keyboard & Mouse > Acceleration Profile > Adaptive
+- Keyboard & Mouse > Middle Click Paste > OFF
 - Top Bar > Battery Percentage > ON
 - Top Bar > Weekday > ON
 
