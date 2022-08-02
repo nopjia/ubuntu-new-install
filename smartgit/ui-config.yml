@@ -1,0 +1,43 @@
+git:
+  projectToolBar-17:
+    items:
+    - {id: fetch}
+    - {id: sync}
+    - {id: push}
+    - {stretching: true}
+    - {id: stage}
+    - {id: indexEditor}
+    - {id: unstage}
+    - {stretching: false}
+    - {id: discard}
+    - {stretching: false}
+    - {id: stashSave}
+    - {id: stashApply}
+    - {stretching: true}
+    - {id: logRepository}
+    - {id: annotate}
+    - {id: investigate}
+    - {stretching: true}
+    - {id: flowContext}
+    - {stretching: false}
+    - {id: merge}
+    - {id: rebaseHeadTo}
+  logToolBar-18.2:
+    items:
+    - {stretching: true}
+    - {id: fetch}
+    - {id: push}
+    - {id: remoteFetch}
+    - {stretching: false}
+    - {id: branchAdd}
+    - {id: merge}
+    - {id: discard}
+    - {id: stashSave}
+    - {id: stashApply}
+    - {stretching: false}
+    - {id: stage}
+    - {id: unstage}
+    - {stretching: false}
+    - {stretching: true}
+    textBelowIcon: true
+filterConfiguration: {}

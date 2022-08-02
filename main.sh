@@ -32,6 +32,7 @@ sudo apt update
 sudo apt install -y google-chrome-stable
 
 # install software
+sudo apt install -y openssh-server
 sudo apt install -y terminator
 sudo snap install tusk
 sudo snap install vlc
@@ -40,6 +41,7 @@ sudo snap install spotify
 sudo snap install code --classic
 sudo snap install sublime-text --classic
 sudo snap install slack --classic
+sudo snap install zoom-client
 
 # install peek
 # https://github.com/phw/peek
@@ -76,7 +78,7 @@ EOF
 sudo ln -s /usr/bin/python3 /usr/bin/python
 
 # gnome tweak tools and extensions
-sudo apt install -y gnome-tweak-tool
+sudo apt install -y gnome-tweaks
 sudo apt install -y gnome-shell-extensions
 sudo apt install -y chrome-gnome-shell
 

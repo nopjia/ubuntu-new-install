@@ -1,0 +1,111 @@
+bounds:
+- {key: log, x: 0, y: 0, width: 1286, height: 1040, state: 1}
+- {key: welcome}
+- {key: configureToolbar, width: 600, height: 370}
+- {key: git.discard, width: 500, height: 309, x: 0, y: -1}
+- {key: compare, x: 240, y: 58, width: 1440, height: 873, state: 1}
+- {key: preferences}
+- {key: git.remove, width: 500, height: 309}
+- {key: git.stage, width: 500, height: 309}
+- {key: output, x: -1, y: -1, width: 725, height: 459}
+- {key: git.stashSave, width: 500, height: 309}
+- {key: git.squashCommits, width: 630, height: 400}
+conflictSolverFrame: {}
+indexEditorFrame: {}
+columns:
+  log.comments:
+    columnNames: "Author\tText\tPath\tDate\tAssignee\tCommit"
+    visibleColumnNames: "Assignee\tAuthor\tDate\tPath\tText"
+    columnWidths:
+    - {id: Author, width: 67, width2x: 0}
+    - {id: Text, width: 48, width2x: 0}
+    - {id: Path, width: 49, width2x: 0}
+    - {id: Date, width: 50, width2x: 0}
+    - {id: Assignee, width: 99, width2x: 0}
+    sortOrders:
+    - {id: Assignee, reverse: false}
+    - {id: Date, reverse: false}
+  git.log.files.mixed:
+    columnNames: "Name\tModification\tRelative Directory\tRenamed Path\tExt.\tRelative\
+      \ Path"
+    visibleColumnNames: "Modification\tName\tRelative Directory\tRenamed Path"
+    columnWidths:
+    - {id: Name, width: 200, width2x: 0}
+    - {id: Modification, width: 60, width2x: 0}
+    - {id: Relative Directory, width: 200, width2x: 0}
+    - {id: Renamed Path, width: 150, width2x: 0}
+    - {id: Relative Path, width: 500, width2x: 0}
+    sortOrders:
+    - {id: Name, reverse: false}
+    - {id: Relative Directory, reverse: false}
+  git.log.files.wt:
+    columnNames: "Name\tState\tRelative Directory\tRenamed Path\tExt.\tLast Changed\
+      \ On\tRelative Path\tSize"
+    visibleColumnNames: "Name\tRelative Directory\tRenamed Path\tState"
+    columnWidths:
+    - {id: Name, width: 200, width2x: 0}
+    - {id: State, width: 60, width2x: 0}
+    - {id: Relative Directory, width: 200, width2x: 0}
+    - {id: Renamed Path, width: 150, width2x: 0}
+    - {id: Relative Path, width: 500, width2x: 0}
+    sortOrders:
+    - {id: Relative Directory, reverse: false}
+    - {id: Name, reverse: true}
+  git.log.files.index:
+    columnNames: "Name\tState\tRelative Directory\tRenamed Path\tExt.\tLast Changed\
+      \ On\tRelative Path\tSize"
+    visibleColumnNames: "Name\tRelative Directory\tRenamed Path\tState"
+    columnWidths:
+    - {id: Name, width: 200, width2x: 0}
+    - {id: State, width: 60, width2x: 0}
+    - {id: Relative Directory, width: 200, width2x: 0}
+    - {id: Renamed Path, width: 150, width2x: 0}
+    - {id: Relative Path, width: 500, width2x: 0}
+    sortOrders:
+    - {id: Name, reverse: false}
+    - {id: Relative Directory, reverse: false}
+  git.log.files:
+    columnNames: "Name\tModification\tRelative Directory\tRenamed Path\tExt.\tRelative\
+      \ Path"
+    visibleColumnNames: "Modification\tName\tRelative Directory\tRenamed Path"
+    columnWidths:
+    - {id: Name, width: 200, width2x: 0}
+    - {id: Modification, width: 60, width2x: 0}
+    - {id: Relative Directory, width: 200, width2x: 0}
+    - {id: Renamed Path, width: 150, width2x: 0}
+    - {id: Relative Path, width: 500, width2x: 0}
+    sortOrders:
+    - {id: Name, reverse: false}
+    - {id: Relative Directory, reverse: false}
+gitViewFileFilter: {}
+deepGitUiConfiguration: {}
+confirmations: {docking.closed: false, git.switchBranch.confirmation: false, git.push: false,
+  git.commit.stageAll: true, git.switchBranch.fastForward: true, exit.showConfirmation: false,
+  remove.repositoryOrGroup: false, commit.amend.replaceWarning: true}
+project.files.git.separateWtIndex: true
+gitProjectLayout.main: (([+2x3:directories ][+1x2:branches ])(([+7x2:files ][+3x1:message
+  ])[+10x2:changes ]([+3x1:outgoing ][-3x1:output ])))
+log.wtIndex.onDemand: false
+log.files.git.separateWtIndex: true
+gitLogRootLayout.main: (([+282x524:branches ][+282x382:repositories ])(([+1635x394:graph
+  ]([-1x1:output -1x1:debug-log output ][-572x365:comments ]))(([+505x176:details
+  ][+505x333:files ])[+1127x512:changes ])))
+changesView.compact: true
+changesView.unified: true
+discard.stash: false
+gitLogRootLayout.mainIsdefault: true
+gitLogRootLayout.review: (([+1x1:repositories ][+1x1:branches ])(([+4x1:graph ]([+2x1:details
+  -1x1:output -1x1:debug-log details ][+2x2:files +2x1:comments files ]))[+4x4:changes
+  ]))
+git.pull.defaultFetch: false
+git.remove.deleteLocalFile: false
+git.addBranch.switch: true
+gitLogSubtreeLayout.main: ([+182x604:branches ][+728x604:graph ]([+364x200:details
+  -1x1:output details ][+364x401:files ]))[+1280x302:changes ]
+gitLogSubtreeLayout.mainIsdefault: true
+gitLogSubtreeLayout.review: ([+1x1:branches ][+4x1:graph ]([+2x1:details -1x1:output
+  details ][+2x2:files ]))[+4x4:changes ]
+git.cherryPick.commit: true
+git.cherryPick.appendSha: false
+stashApply.drop: true
+stashApply.restoreIndex: true

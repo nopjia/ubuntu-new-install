@@ -19,7 +19,11 @@ Some software should already be installed by bash script
 Others
 
 - https://www.syntevo.com/smartgit/
-- https://zoom.us/download
+  - copy UI config files
+
+```sh
+cp smartgit/* ~/.config/smartgit/21.2/
+```
 
 ## GNOME Tweak Tool and Extensions
 
