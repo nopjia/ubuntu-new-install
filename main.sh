@@ -17,7 +17,6 @@ cat >> ~/.bash_aliases <<EOF
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias open='xdg-open > /dev/null 2>&1'
 EOF
 
 # install dependencies
@@ -32,10 +31,8 @@ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable
 sudo apt update
 sudo apt install -y google-chrome-stable
 
-# uninstall firefox
-sudo apt remove -y firefox
-
 # install software
+sudo apt install -y terminator
 sudo snap install tusk
 sudo snap install vlc
 sudo snap install emote
