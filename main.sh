@@ -46,8 +46,7 @@ export NVM_DIR="$HOME/.nvm"
 nvm install --lts
 
 # install git
-sudo apt install -y git
-sudo apt install -y git-lfs
+sudo apt install -y git git-lfs
 git lfs install
 cat >> ~/.gitconfig <<EOF
 [credential]
@@ -77,4 +76,4 @@ sudo apt install -y gnome-shell-extensions
 sudo apt install -y chrome-gnome-shell
 
 # cleanup
-sudo apt autoremove
+sudo apt autoremove -y
