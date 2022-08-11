@@ -1,6 +1,16 @@
 # New Ubuntu Install
 
-Ubuntu 20.04.3 LTS
+Ubuntu 22.04
+
+## Install Additional Drivers
+
+Install Nvidia proprietary drivers.
+
+If unselectable, run the following:
+
+```
+sudo ubuntu-drivers install
+```
 
 ## Settings
 
@@ -18,6 +28,7 @@ Some software should already be installed by bash script
 
 Others
 
+- https://zoom.us/download
 - https://www.syntevo.com/smartgit/
   - copy UI config files
 
