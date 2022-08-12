@@ -8,6 +8,7 @@ mkdir -p ~/code
 mkdir -p ~/nop
 mkdir -p ~/nop/personal
 cp ./images/cat_by_niqole-lee_square.jpg ~/nop/personal
+cp ./images/cat_by_niqole-lee_square.jpg ~/.face
 cp ./images/purple_wallpaper.jpg ~/nop/personal
 gsettings set org.gnome.desktop.background picture-uri file:///home/nop/nop/personal/purple_wallpaper.jpg
 
