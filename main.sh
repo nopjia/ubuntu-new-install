@@ -32,7 +32,6 @@ sudo snap install spotify
 sudo snap install code --classic
 sudo snap install sublime-text --classic
 sudo snap install slack --classic
-sudo snap install zoom-client
 
 # install google chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -67,9 +66,6 @@ EOF
 sudo add-apt-repository -y ppa:peek-developers/stable
 sudo apt update
 sudo apt install -y peek
-
-# link python
-sudo ln -s /usr/bin/python3 /usr/bin/python
 
 # gnome tweak tools and extensions
 sudo apt install -y gnome-tweaks
